@@ -13,7 +13,7 @@ fun User.toUserDTO() = UserDTO(username, fullName, id)
 
 data class CreateUserDTO(
         var username: String,
-        var fullName: String,
+        var fullname: String,
         val password: String,
         val password2: String
 )

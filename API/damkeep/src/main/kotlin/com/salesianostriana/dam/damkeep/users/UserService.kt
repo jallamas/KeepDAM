@@ -16,7 +16,7 @@ class UserService(
             return Optional.empty()
         return Optional.of(
                 with(newUser) {
-                    repo.save(User(username, encoder.encode(password), fullName))
+                    repo.save(User(username, encoder.encode(password), fullname))
                 }
 
         )
