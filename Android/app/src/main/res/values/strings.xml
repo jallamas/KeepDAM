@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">KeepDAM</string>
+    <string name="app_title">KeepDAM App</string>
+    <string name="hint_login_username">Usuario</string>
+    <string name="hint_login_password">Password</string>
+    <string name="button_login">LOGIN</string>
+    <string name="login_register">Regístrate</string>
+    <string name="register_title">Registro de nuevo usuario</string>
+    <string name="register_username_title">Usuario</string>
+    <string name="register_fullname_title">Nombre completo</string>
+    <string name="register_username">Nombre de usuario</string>
+    <string name="hint_register_fullname">Nombre completo</string>
+    <string name="hint_register_password1">Contraseña</string>
+    <string name="hint_register_password2">Repita la contraseña</string>
+    <string name="button_register">REGISTRO</string>
+    <string name="nuevanota_title">NUEVA NOTA</string>
+    <string name="hint_nuevanota_title">Título</string>
+    <string name="hint_nuevanota_contenido">Contenido</string>
+    <string name="button_nuevanota_guardar">GUARDAR</string>
+    <string name="detalle_fecha_creacion">Fecha de creación:</string>
+    <string name="detalle_fecha_modificacion">Fecha de modificación:</string>
+    <string name="button_detalle_delete">ELIMINAR NOTA</string>
+    <string name="button_detalle_edit">EDITAR NOTA</string>
+</resources>

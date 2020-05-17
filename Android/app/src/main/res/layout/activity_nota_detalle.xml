@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".NotaDetalleActivity">
+
+    <TextView
+        android:id="@+id/textViewDetalleTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDetalleCreacionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/detalle_fecha_creacion"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textViewDetalleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetalleModificacionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/detalle_fecha_modificacion"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textViewDetalleCreacionTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleCreacionTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetalleContenido"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDetalleDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleModificacionTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetalleCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDetalleCreacionTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewDetalleCreacionTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewDetalleCreacionTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetalleModificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDetalleModificacionTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewDetalleModificacionTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewDetalleModificacionTitle" />
+
+    <Button
+        android:id="@+id/buttonDetalleDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="@string/button_detalle_delete"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDetalleEditar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDetalleContenido"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewDetalleContenido"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleContenido" />
+
+    <Button
+        android:id="@+id/buttonDetalleEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/button_detalle_edit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDetalleDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonDetalleDelete"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDetalleDelete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

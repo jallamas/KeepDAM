@@ -1,0 +1,2 @@
+rootProject.name='KeepDAM'
+include ':app'
