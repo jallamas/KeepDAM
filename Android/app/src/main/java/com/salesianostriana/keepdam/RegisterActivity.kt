@@ -47,10 +47,10 @@ class RegisterActivity : AppCompatActivity() {
 
                 userViewModel.signup(
                     RegisterReq(
+                        username.text.toString(),
                         fullname.text.toString(),
                         password1.text.toString(),
-                        password2.text.toString(),
-                        username.text.toString()
+                        password2.text.toString()
                     )
                 ).observe(this, Observer {
                     val register:Intent = Intent(MyApp.instance,LoginActivity::class.java).apply {
@@ -60,7 +60,7 @@ class RegisterActivity : AppCompatActivity() {
                     finish()
                 })
             }else{
-                Toast.makeText(MyApp.instance,"Las contraseñas no coinciden",Toast.LENGTH_SHORT)
+                Toast.makeText(MyApp.instance,"Las contraseñas no coinciden",Toast.LENGTH_SHORT).show()
             }
 
         })

@@ -14,7 +14,7 @@ interface KeepDamService {
     @POST("/auth/login")
     fun login(@Body request: LoginReq): Call<LoginResponse>
 
-    @POST("/user")
+    @POST("/user/")
     fun signup(@Body request: RegisterReq): Call<User>
 
     @GET("/notas/")
